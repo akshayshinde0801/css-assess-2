@@ -1,0 +1,99 @@
+body{
+   
+    background-color: black;
+   
+}
+.main{
+    color: white;
+    
+}
+h1{
+    font-size: 50px;
+    animation-name: textdecoration;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+    
+}
+.spinner{
+
+    margin:  100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+.spinner > div {
+width: 20px;
+height: 20px;
+background-color: white;
+border-radius: 100%;
+display: inline-block;
+animation: bouncedelay 3s infinite ease-in-out both;}
+
+.spinner .bounce1{
+animation-delay: 1s;
+color: aqua;
+}
+.spinner .bounce2{
+    animation-delay: 0.30s;
+    }
+    .spinner .bounce3{
+        animation-delay: 0.15s;
+        }
+
+@keyframes bouncedelay{
+0%, 80%,100%{
+transform: scale(0);
+}
+40%{
+    transform: scale(1.0);
+}
+}
+@media only screen and (min-width:279px) and (max-width:780px){
+    .main{
+        font-size: 10px;
+        
+    }
+    .spinner{
+       margin-top: 300px;
+    }
+    
+}
+h2{
+    color: aqua;
+text-align: center;
+margin-top: 100px;
+font-size: 40px;
+animation-name: textdeco;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+
+}
+@keyframes textdeco {
+25%{
+color: white;
+}
+50%{
+    color: chartreuse;
+}
+75%{
+    color: coral;
+}
+100%{
+    color: gold;
+}
+
+}
+@keyframes textdecoration {
+    25%{
+    color: white;
+    }
+    50%{
+        color: pink;
+    }
+    75%{
+       color: cornflowerblue;
+    }
+    100%{
+        color: lawngreen;
+    }
+    
+    }
